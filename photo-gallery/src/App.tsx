@@ -1,8 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { usePhotoList } from './photoList';
 
 function App() {
+
+  const {isLoading, photoList} = usePhotoList()
+
+  console.log(isLoading)
+  console.log(photoList)
+
+   
   return (
     <div className="App">
       <header className="App-header">
